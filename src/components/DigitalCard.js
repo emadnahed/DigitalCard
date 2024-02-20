@@ -10,9 +10,7 @@ import { useLocation } from "react-router-dom";
 export default function DigitalCard() {
   const location = useLocation();
   const formData = location.state.formData;
-
-  // Now you can access formData and use it as needed
-
+  
   const {
     imageUrl,
     email,
@@ -28,8 +26,6 @@ export default function DigitalCard() {
     instaGram,
     github,
   } = formData;
-  
-
   
   return (
     <>
@@ -54,16 +50,3 @@ export default function DigitalCard() {
     </>
   );
 }
-
-// imageUrl
-// alt
-// Name
-// website
-// jobTitle
-// linkedin
-// about
-// description
-// twitter
-// facebook
-// instaGram
-// Github

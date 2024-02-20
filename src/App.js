@@ -13,10 +13,11 @@ function App() {
 
       {/* <DigitalCard />; */}
 
-      <Routes>
-        <Route index element={<FormCollection />} />          
+      <Routes>        
+        <Route>          
+        <Route path="/" element={<FormCollection />} />
         <Route path="/DigitalCard" element={<DigitalCard />} />            
-        
+        </Route>
       </Routes>
 
     </BrowserRouter>
