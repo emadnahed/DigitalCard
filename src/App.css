@@ -1,12 +1,13 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: #23252C;
 }
 
 
 .outer-container {
   background-color: #23252C;
-  height: 1000px;
+  height: 775px;
   width: 100%;
   display: flex;
   justify-content: center; 
@@ -15,7 +16,7 @@ html, body {
 
 .inner-container{
   /* border: 0.01rem solid pink; */
-  height: 790px;
+  height: 709px;
   width: 317px;
   display: flex;
   flex-direction: column;
@@ -45,6 +46,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  margin: 12px;
 }
 
 
@@ -138,7 +140,7 @@ html, body {
   text-decoration: none;
 }
 
-.txt-info{
+.txt-info{  
   height: 201px;
   width: 277px;
   left: 36px;
@@ -178,4 +180,60 @@ color: #DCDCDC;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+
+/* ------------------------------------- */
+
+/* Form Container */
+.form-container {
+  max-width: 600px;
+  margin: 29px auto;
+  padding: 20px;
+  background-color: #ddd5d5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(151, 17, 17, 0.1);
+}
+
+.form-container>h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+/* Form Labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;  
+}
+
+/* Form Inputs */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }
