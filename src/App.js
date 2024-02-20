@@ -15,7 +15,7 @@ function App() {
 
       <Routes>        
         <Route>          
-        <Route path="/" element={<FormCollection />} />
+        <Route path="/" element={<h1>Hiiii</h1>} />
         <Route path="/DigitalCard" element={<DigitalCard />} />            
         </Route>
       </Routes>
