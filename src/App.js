@@ -9,13 +9,9 @@ function App() {
     
   return (
     <BrowserRouter>
-      {/* <FormCollection/> */}
-
-      {/* <DigitalCard />; */}
-
       <Routes>        
         <Route>          
-        <Route path="/" element={<h1>Hiiii</h1>} />
+        <Route path="/" element={<FormCollection/>} />
         <Route path="/DigitalCard" element={<DigitalCard />} />            
         </Route>
       </Routes>
