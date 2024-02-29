@@ -244,3 +244,75 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+}
+
+.navbar-logo img {
+  width: 50px;
+  height: auto;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 1rem;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #ccc;
+}
+
+
+
+.navbar{
+  background-color: #007bff;
+  height: 30px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+
+.sample{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;  
+}
+
+.sample > * {
+  margin: 15px;
+}
+
+.sample-btn{    
+    background-color: #007bff; /* Green */
+    border: none;    
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);    
+  
+}
