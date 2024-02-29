@@ -46,6 +46,7 @@ export default function FormCollection() {
           <input
             type="text"
             name="imageUrl"
+            placeholder="Paste your image URL (CORS compying) here"
             value={formData.imageUrl}
             onChange={handleChange}
             required
@@ -57,6 +58,7 @@ export default function FormCollection() {
             type="text"
             name="alt"
             value={formData.alt}
+            placeholder="Image title"
             onChange={handleChange}
             required
           />
@@ -67,6 +69,7 @@ export default function FormCollection() {
           <input
             type="text"
             name="email"
+            placeholder="Email address"
             value={formData.email}
             onChange={handleChange}
             required
@@ -78,6 +81,7 @@ export default function FormCollection() {
           <input
             type="text"
             name="name"
+            placeholder="Your name"
             value={formData.name}
             onChange={handleChange}
             required
@@ -88,6 +92,7 @@ export default function FormCollection() {
           <input
             type="text"
             name="website"
+            placeholder="http://your-website.com"
             value={formData.website}
             onChange={handleChange}
             required
@@ -98,6 +103,7 @@ export default function FormCollection() {
           <input
             type="text"
             name="jobTitle"
+            placeholder="What do you do?"
             value={formData.jobTitle}
             onChange={handleChange}
             required
@@ -108,6 +114,7 @@ export default function FormCollection() {
           <input
             type="text"
             name="linkedin"
+            placeholder="Link to your LinkedIn profile"
             value={formData.linkedin}
             onChange={handleChange}
             required
@@ -118,16 +125,17 @@ export default function FormCollection() {
           About:
           <textarea
             type="text"
-            name="about"
+            name="about"      
             value={formData.about}
             onChange={handleChange}
-            minLength={10}
-            maxLength={100}
+            minLength={200}   
+            maxLength={210}
+            placeholder="About section must be at least 200 characters long."
             required
           />
           {formData.about.length < 10 && formData.about.length > 0 && (
             <p style={{ color: "red" }}>
-              About section must be at least 100 characters long.
+              About section must be at least 200 characters long.
             </p>
           )}
         </label>
@@ -137,8 +145,16 @@ export default function FormCollection() {
             name="description"
             value={formData.description}
             onChange={handleChange}
+            placeholder="Description section must be at least 130 characters long."
+            minLength={130}
+            maxLength={131}
             required
           />
+          {formData.description.length < 10 && formData.description.length > 0 && (
+            <p style={{ color: "red" }}>
+              Description section must be at least 130 characters long.
+            </p>
+          )}
         </label>
         <label>
           Twitter:
@@ -146,6 +162,7 @@ export default function FormCollection() {
             type="text"
             name="twitter"
             value={formData.twitter}
+            placeholder="Twitter handle"
             onChange={handleChange}
             required
           />
@@ -156,6 +173,7 @@ export default function FormCollection() {
             type="text"
             name="facebook"
             value={formData.facebook}
+            placeholder="Facebook page URL"
             onChange={handleChange}
             required
           />
@@ -166,6 +184,7 @@ export default function FormCollection() {
             type="text"
             name="instagram"
             value={formData.instagram}
+            placeholder="Instagram username"
             onChange={handleChange}
             required
           />
@@ -176,6 +195,7 @@ export default function FormCollection() {
             type="text"
             name="github"
             value={formData.github}
+            placeholder="Github profile link"
             onChange={handleChange}
             required
           />

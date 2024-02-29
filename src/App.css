@@ -8,15 +8,18 @@ html, body {
 .outer-container {
   background-color: #23252C;
   height: 775px;
+  /* max-height: 900px; */
   width: 100%;
-  display: flex;
+  display: flex;  
   justify-content: center; 
   align-items: center;
+  /* margin: 30px; */
+  
 }
 
 .inner-container{
   /* border: 0.01rem solid pink; */
-  height: 709px;
+  height: auto;
   width: 317px;
   display: flex;
   flex-direction: column;
@@ -26,10 +29,13 @@ html, body {
   background-color: #1A1B21;    
 }
 
+.inner-container>*{
+  /* margin: 3px; */
+}
 
 .img-container{
   /* border: 0.1rem solid white; */
-  height: 317px;
+  height: auto;
   width: 317px;
   
 }
@@ -46,7 +52,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-  margin: 12px;
+  
 }
 
 
@@ -54,7 +60,7 @@ html, body {
   font-family: "arial";
   font-style: normal;
   font-size: 29px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 30px;
   letter-spacing: 0em;
   color: #FFFFFF;
@@ -66,7 +72,7 @@ html, body {
   color:#F3BF99;
   font-size: 14.8px;
   height: 14.193548202514648px;    
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
 }
 
 .myInfo>a{
@@ -141,11 +147,12 @@ html, body {
 }
 
 .txt-info{  
-  height: 201px;
+  /* height: 201px; */
   width: 277px;
   left: 36px;
   top: 491px;
   border-radius: 0px;
+  padding: 6px;
   /* border: 3px solid white; */
 
 }
