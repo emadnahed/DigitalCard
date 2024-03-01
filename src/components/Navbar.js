@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import imgr from './digitalisation.png'
+import imgr from '../assets/digitalisation.png'
 
 function Navbar() {
   return (
