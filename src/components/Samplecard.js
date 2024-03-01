@@ -20,7 +20,7 @@ export default function Samplecard() {
 
         <div className="outer-container">
           <div className="inner-container">
-            <Imager imgf={require("./self2.png")} alt={"Mypic"} />
+            <Imager imgf={require("../assets/self2.png")} alt={"Mypic"} />
             <MyInfo
               name={"Emaad Nahed"}
               title={"Front-End Developer"}
